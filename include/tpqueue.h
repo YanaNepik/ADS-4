@@ -5,7 +5,7 @@
 
 template<typename T>
 class TPQueue {
-   private:
+ private:
     T* arr;
     int size;
     int begin, end;
@@ -16,7 +16,6 @@ class TPQueue {
             r += size + 1;
         return r;
     }
-  
     int stepForward(int index) {
         int r = ++index;
         if (r > size)
@@ -81,5 +80,4 @@ struct SYM {
   char ch;
   int  prior;
 };
-
 #endif // INCLUDE_TPQUEUE_H_
